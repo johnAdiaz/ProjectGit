@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+<!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/skateDFW/skate.css" />
+    <title>Skate DFW</title>
+</head>
+<body>
+<!--Header-->
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h1>skate dfw</h1>
+                    <h2>the spot hub</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+<!--Nav-->
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nucampNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>
+                        About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                <li>
+                    <a class="nav-link" href="#reserveForm" data-toggle="tooltip"
+                    data-html="true" data-placement="bottom"
+                    title="Or call us at <br><strong>1-206-555-1234</strong>"><i class="fa fa-calendar-plus-o "></i> Reserve Campsite</a>
+                </li>
+            </ul>
+            <span class="navbar-text ml-auto" id="loginBox">
+                <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <i class="fa fa-user-circle"></i> Login
+                </a>
+            </span>
+        </div>
+    </div>
+</nav>
+
+<div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Login</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="loginEmail">Email address</label>
+                                <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="loginPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                    placeholder="Password">
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-light text-dark btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-dark text-light btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Main Body-->
+<div>
+    <h2>Upcoming Events</h2>
+    <h3>Spot Competition</h3>
+    <p>Description with thumbnail of spot.</p>
+</div>
+<div>
+    <h2>New Spots</h2>
+    <p>*Insert Carousel*</p>
+</div>
+<div>
+    <h2>Clip of the Week</h2>
+    <h3>"name" owns "spot name"</h3>
+    <p>Video description.</p>
+</div>
+<!--Footer-->
+<footer>
+    <div>
+        <h5>Links</h5>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Donate</li>
+        </ul>
+    </div>
+    <div>
+        <h5>Social</h5>
+        <p>IG, FB, twitter, YT</p>
+    </div>
+    <div>
+        <p>email address</p>
+    </div>
+
+</footer>
+
+ <!-- build:js js/main.js -->
+ <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+ <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ <script></script>
+ <!-- endbuild -->
+
+</body>
+</html>
