@@ -16,81 +16,227 @@
     <title>Skate DFW</title>
 </head>
 <body>
-<!--Header-->
-    <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div id="logoBox" class="mx-auto">
-                    <h1>skate dfw</h1>
-                </div>
-            </div>
-        </div>
-    </header>
-<!--Nav-->
+<!--Nav Header-->            
 <nav class="navbar navbar-expand-sm sticky-top navbar-dark">
+    <div class="col-xs-6">
+        <h2 id="logoBox">skate dfw <i class="fa fa-map-marker" id="iconChange"></i></h1>
+    </div>
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#dfwNav">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class= "collapse navbar-collapse" id="dfwNav">
-        <ul class="navbar-nav mx-auto">
+    <div class= "collapse navbar-collapse col-xs-6 ml-auto" id="dfwNav">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link active" href="#">home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">spots</a></li>
             <li class="nav-item"><a class="nav-link" href="#">about</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">login</a></li>
+            <li class="nav-item"><a class="nav-link button" data-toggle="modal" data-target="#loginModal" href="#">login</a></li>
         </ul>
     </div>
 </nav>
-<!--Main Body-->
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h2>Upcoming Events</h2>
-            <h4>Spot Competition</h4>
-            <p>Description with thumbnail of spot.</p>
-        </div>
-        <div class="col">
-            <h2>Submit a Spot Form </h2>
+<!--Login Modal-->
+<div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="loginEmail">Email address</label>
+                                <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="loginPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                            </div>
+                            <div class="col">
+                                <div class="form-check" type="checkbox">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-light btn-sm ml-1" id="buttonChange">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-<div>
-    <h2>New Spots</h2>
-    <p>*Insert Carousel*</p>
 </div>
-<div>
-    <h2>Clip of the Week</h2>
-    <h3>"name" owns "spot name"</h3>
-    <p>Video description.</p>
+<!--jumbotron-->
+<div class="container-fluid">
+    <div class="row jumbotron jumbotron-fluid text-center">
+        <div class="col-12">
+            <h2>Welcome to skate dfw</h2>
+        </div>
+        <div class="col-12">
+            <p class="lead">This site serves as a hub for great skate spots in our communities, brings us together for competitive events, and hopefully helps you meet new people.</p>
+        </div>
+    </div>
 </div>
+<!--about-->
+<div class="container-fluid padding" id="infoBox">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fa fa-map-marker" id="iconChange"></i>
+            <h3>spots</h3>
+            <p>Find new spots with our map.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fa fa-calendar" id="iconChange"></i>
+            <h3>events</h3>
+            <p>Weekly competitions and other events.</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <i class="fa fa-user-plus" id="iconChange"></i>
+            <h3>community</h3>
+            <p>Connect with others.</p>
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+<!--New Spot Cards-->
+<div class="container-fluid">
+    <h1><em>new spots</em></h1>
+    <div class="card-deck row padding">
+        <div class="card mb-3">
+          <img class="card-img-top" src="/spot1.jpeg" alt="Spot 1">
+            <div class="card-header">
+                <h5 class="card-title m-0">Spot 1</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Spot 1 is a never ending half pipe of fun. Wonder where it leads?</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <img class="card-img-top" src="/spot2.jpeg" alt="Spot 2">
+            <div class="card-header">
+                <h5 class="card-title m-0">Spot 2</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Spot 2 is famous stair - hubba combo that anyone would love to skate.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+          <img class="card-img-top" src="/dfwMap.jpeg" alt="DFW Map">
+          <div class="card-header">
+                <h5 class="card-title m-0">Submit New Spot</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Know a fun spot that you wanna share? Submit it now!</p>
+            <a href="#spotSubmit" class="btn btn-primary" id="buttonChange">submit</a>
+          </div>
+        </div>
+    </div>
+    <hr class="my-4">
+</div>   
+<!--Events-->
+<div class="container-fluid padding">
+    <div class="row padding align-items-center" id="eventBox">
+        <div class= "col-md-6 text-right">
+            <h1><em>upcoming events</em></h1> 
+            <h4>Spot 1 - Own The Spot <i class="fa fa-lg fa-map-marker" id="iconChange"></i></h4>
+            <p>Best trick wins. This purely fictional event will be taking place tomorrow at Spot 1, rain or shine. Bring your friends (so you can crush them)! We will have an award ceremony where the winner will be awarded a microwaved hotdog.<br></p>
+            <a href="#" type="button" class="btn btn-primary" id="buttonChange">sign up</a>
+        </div>
+        <div class="col-md-6">
+            <img src="/spot1.jpeg" alt="Spot 1" class="img-fluid">
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+<!--Clip-->
+<div class="container-fluid padding">
+    <div class="row padding align-items-center">
+        <div class="col-md col-xl-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tKyi6kS6AJ0?start=43" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+            <h1><em>clip of the week</em></h1>
+            <h4>10 yr old absolutely shreds.</h4>
+            <p>Only 10 and already killing it. This kid has a bright future.</p>
+        </div>
+        
+    </div>
+    <hr class="my-4">
+</div>
+<!--Spot Form-->
+<h1><em>spot submission</em></h1>
+<form id="spotSubmit">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="City">
+        </div>
+    </div>   
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>...</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="form-group">
+            <label for="spotImage">Upload a photo</label>
+            <input type="file" class="form-control-file" id="spotImage">
+        </div>
+    </div>
+        <div class="form-group">
+            <label for="spotDesc">Description</label>
+            <input type="text" class="form-control" id="spotDesc" placeholder="Short description">
+        </div>
+    <button type="submit" class="btn btn-primary" id="buttonchange" data-toggle="tooltip" data-html="true" data-placement="right" title="You must be logged in to submit a spot">Submit</button>
+</form>
 <!--Footer-->
 <footer>
-    <div>
-        <h5>Links</h5>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Donate</li>
-        </ul>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Home</a></li> 
+                    <li><a href="#" class="text-light">About</a></li> 
+                    <li><a href="#" class="text-light">Donate</a></li> 
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h5>Social</h5>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            </div>
+            <div class="col-sm text-center">
+                <h5>Contact</h5>
+                <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a>
+                <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+            </div>
+        </div>
     </div>
-    <div>
-        <h5>Social</h5>
-        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-    </div>
-    <div class="col-sm-4 text-center">
-        <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
-        <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
-    </div>
-
+</div>
 </footer>
 
  <!-- build:js js/main.js -->
  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
- <script></script>
+ <script src="/skateJS.js"></script>
  <!-- endbuild -->
 
 </body>

@@ -1,8 +1,6 @@
-.jumbotron {
-    padding: 10px;
-    padding-bottom: 0px;
-    margin: 0px;
-    background-image: linear-gradient(to bottom, rgb(255, 0, 0) 0%, rgb(230, 1, 1) 35%, rgba(209,0,0,1) 100%);
+.navbar {
+    background: linear-gradient(180deg, rgba(176,22,14,1), rgb(150, 20, 13) 40%, rgb(83, 34, 19) 120%);
+    padding: 5px 5%;
 }
 
 .nav-item {
@@ -14,16 +12,88 @@ transition: .5s;
 background: rgb(236, 95, 95) 100%;
 }
 
-.navbar {
-    background: rgba(209,0,0,1) 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
 #logoBox {
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(251,251,251,1) 35%, rgb(204, 202, 202) 100%);
-    padding: 20px 40px 20px 40px;
-    margin-top: 20px;
-    border: solid linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(251,251,251,1) 35%, rgba(240,240,240,1) 100%);
+    padding: 0px 10px;
+    margin: 0px;
+    border: solid white 0px;
     border-radius: 5px;
 }
+
+h1 {
+color: rgba(176,22,14,1);
+margin: 1rem;
+}
+
+.modal-header {
+    background: linear-gradient(180deg, rgba(176,22,14,1), rgb(150, 20, 13) 40%, rgb(83, 34, 19) 120%);
+    padding: 5px 5%;
+}
+
+.modal-header h3 {
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(251,251,251,1) 35%, rgb(204, 202, 202) 100%);
+    padding: 2px 10px;
+    margin: 0px;
+    border: solid white 0px;
+    border-radius: 5px;
+}
+
+#buttonChange {
+    background-color: #259298;
+    border: solid 0px;
+}
+
+#iconChange {
+    color: #259298;
+}
+
+#infoBox .fa-map-marker, .fa-calendar, .fa-user-plus {
+    font-size: 3em;
+    margin: 1rem;
+}
+
+.card-header {
+    background: linear-gradient(180deg, rgba(176,22,14,1), rgb(150, 20, 13) 40%, rgb(83, 34, 19) 120%);
+    color: white;
+    text-align: center;
+    margin: 0;
+    transition: .5s;
+}
+
+.card {
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+.card:hover {
+    filter: grayscale(0%)
+}
+
+#eventBox img {
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    background-color: rgb(204, 202, 202);
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    border: solid white 0px;
+    border-radius: 5px;
+}
+
+#buttonchange {
+    background-color: #259298;
+    border: solid white 0px;
+    border-radius: 5px;
+}
+
+footer {
+    background: #3d3d3d;
+    color: white;
+    padding: 20px 0;
+    
+}
+
+
