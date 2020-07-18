@@ -20,22 +20,26 @@ background: rgb(236, 95, 95) 100%;
     border-radius: 5px;
 }
 
+.jumbotron h2 {
+    color: rgba(176,22,14,1);
+}
+
 h1 {
 color: rgba(176,22,14,1);
 margin: 1rem;
 }
 
 .modal-header {
-    background: linear-gradient(180deg, rgba(176,22,14,1), rgb(150, 20, 13) 40%, rgb(83, 34, 19) 120%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(251,251,251,1) 35%, rgb(204, 202, 202) 100%);
     padding: 5px 5%;
 }
 
-.modal-header h3 {
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(251,251,251,1) 35%, rgb(204, 202, 202) 100%);
+.modal-header h2 {
     padding: 2px 10px;
     margin: 0px;
     border: solid white 0px;
     border-radius: 5px;
+    color: rgba(176,22,14,1);
 }
 
 #buttonChange {
@@ -96,4 +100,34 @@ footer {
     
 }
 
+/* skateAbout additions here */
 
+#aboutBox {
+    background-color: rgb(240, 240, 240);
+    padding: 10% 5%;
+}
+
+#aboutBox img{
+    border: solid 0px;
+    border-radius: 5px;   
+}
+
+.mepic {
+    padding: 5px;
+}
+
+#infoBox2 .fa-map-marker, .fa-calendar, .fa-user-plus {
+    font-size: 3em;
+    margin: 1rem;
+}
+
+#infoBox2 {
+    padding: 2rem;
+}
+
+/* skateSpots additions here */
+
+.fa-frown-o {
+    font-size: 3em;
+    margin: 1rem;
+}

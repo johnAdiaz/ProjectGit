@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+<!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/skate.css" />
+    <title>Skate DFW</title>
+</head>
+<body>
+<!--Nav Header-->            
+<nav class="navbar navbar-expand-sm sticky-top navbar-dark">
+    <div class="col-xs-6">
+        <h2 id="logoBox">skate dfw <i class="fa fa-map-marker" id="iconChange"></i></h1>
+    </div>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#dfwNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class= "collapse navbar-collapse col-xs-6 ml-auto" id="dfwNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/skateDFW.html">home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">spots</a></li>
+            <li class="nav-item"><a class="nav-link" href="/skateAbout.html">about</a></li>
+            <li class="nav-item"><a class="nav-link button" data-toggle="modal" data-target="#loginModal" href="#">login</a></li>
+        </ul>
+    </div>
+</nav>
+<!--Login Modal-->
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2><em>Login</em></h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check" type="checkbox">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-light btn-sm ml-1" id="buttonChange">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--jumbo-->
+<div class="container-fluid">
+    <div class="row jumbotron jumbotron-fluid text-center">
+        <div class="col-12">
+            <i class="fa fa-frown-o" id="iconChange"></i>
+            <h2><em>bummer!</em></h2>
+        </div>
+        <div class="col-12">
+            <p class="lead">The spot map area is currently under maintenance.<br> Feel free to submit more spots while we work on it!</p>
+        </div>
+    </div>
+</div>
+<!--spot cards-->
+<div class="container-fluid">
+    <h1><em>skate spots</em></h1>
+    <div class="card-deck row padding">
+        <div class="card mb-3">
+          <img class="card-img-top" src="/spot1.jpeg" alt="Spot 1">
+            <div class="card-header">
+                <h5 class="card-title m-0">Spot 1</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Spot 1 is a never ending half pipe of fun. Wonder where it leads?</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <img class="card-img-top" src="/spot2.jpeg" alt="Spot 2">
+            <div class="card-header">
+                <h5 class="card-title m-0">Spot 2</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Spot 2 is famous stair - hubba combo that anyone would love to skate.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+          <img class="card-img-top" src="/dfwMap.jpeg" alt="DFW Map">
+          <div class="card-header">
+                <h5 class="card-title m-0">Submit New Spot</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Know a fun spot that you wanna share? Submit it now!</p>
+            <a href="#spotSubmit" class="btn btn-primary" id="buttonChange">submit</a>
+          </div>
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+<!--Submission Form-->
+<h1><em>spot submission</em></h1>
+<form id="spotSubmit">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="City">
+        </div>
+    </div>   
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>...</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="form-group">
+            <label for="spotImage">Upload a photo</label>
+            <input type="file" class="form-control-file" id="spotImage">
+        </div>
+    </div>
+        <div class="form-group">
+            <label for="spotDesc">Description</label>
+            <input type="text" class="form-control" id="spotDesc" placeholder="Short description">
+        </div>
+    <button type="submit" class="btn btn-primary" id="buttonchange" data-toggle="tooltip" data-html="true" data-placement="right" title="You must be logged in to submit a spot">Submit</button>
+</form>
+<!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/skateDFW.html" class="text-light">Home</a></li> 
+                        <li><a href="/skateAbout.html" class="text-light">About</a></li> 
+                        <li><a href="#" class="text-light">Donate</a></li> 
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm text-center">
+                    <h5>Contact</h5>
+                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a>
+                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/skateJS.js"></script>
+    <!-- endbuild -->
+
+</body>
+</html>
